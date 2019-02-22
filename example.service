@@ -1,0 +1,13 @@
+[Unit]
+Description=phonescreenapp #Your project name
+After=network.target
+
+[Service]
+User=gideon_dirgahayu #Your username
+Restart=on-failure
+WorkingDirectory=/home/gideon_dirgahayu/PhoneScreenClassifier/ #Your project directory 
+ExecStart=/usr/bin/python3 /home/gideon_dirgahayu/PhoneScreenClassifier/app.py #Your api script directory
+#ExecStart=/home/gideon_dirgahayu/.local/bin/gunicorn -c /home/gideon_dirgahayu/PhoneScreenClassifier/gunicorn.conf -b 127.0.0.1:5000 app:app
+
+[Install]
+WantedBy=multi-user.target
