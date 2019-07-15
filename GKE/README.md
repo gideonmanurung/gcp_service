@@ -43,6 +43,7 @@ sudo docker run <docker name> network=host
 #### deploy gke:
 ```
 # create cluster
+#gcloud container clusters resize <cluster name> --node-pool <pool name> --num-nodes <num nodes>
 gcloud container clusters create <cluster name> --zone=asia-southeast1-a
 gcloud config set compute/zone asia-southeast1-a
 gcloud container clusters get-credentials <cluster name> 
