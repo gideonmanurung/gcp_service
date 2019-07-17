@@ -54,6 +54,8 @@ kubectl run <deployment name> --image=<image url> --port=8080
 kubectl expose deployment <deployment name> --type="LoadBalancer"
 kubectl get service <deployment name>
 
+kubectl autoscale deployment telkomedika-gke --min=<num units> --max=<num units> --cpu-percent=<num percent>
+
 # run your app
 http://EXTERNAL-IP:8080
 ```
