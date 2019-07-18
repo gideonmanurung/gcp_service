@@ -1,4 +1,4 @@
-# Google-Cloud-Note
+# Note for how to use google cloud service
 
 This repo contains my notes of using google cloud platform.
 
