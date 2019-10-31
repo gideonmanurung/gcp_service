@@ -31,7 +31,7 @@ The standard training result is ready to berved model in ml-engine without addit
 - Activate env source `myvirtualenv/bin/activate`
 
 ##### Put your train.csv and test.csv in your gcp bucker
-- example: `gs://fatchur_test/train.csv` and `gs://fatchur_test/test.csv`
+- example: `gs://storage/train.csv` and `gs://storage/test.csv`
 
 #### C.3 Training Command in Local:
 ```
