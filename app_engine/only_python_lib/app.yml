@@ -1,10 +1,10 @@
-runtime: python37 #python27
-service: my-app
-instance_class: F4
+runtime: python37 # Python Version
+service: app-engine-name # Name for app engine
+instance_class: F4 # Type instance : F1, F2 , F4 , F4_1G
 automatic_scaling:
-    target_cpu_utilization: 0.85
-    min_instances: 0
-    max_instances: 3
+    target_cpu_utilization: 0.85 # max utilization cpu
+    min_instances: 1 # min instance for standby
+    max_instances: 5 # max scale instance
     # min_pending_latency: 30ms
     max_pending_latency: 9000ms
     max_concurrent_requests: 1000
