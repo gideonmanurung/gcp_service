@@ -16,7 +16,7 @@ def google_ocr(image_b64):
         text_annotation[string] -- [Extracted text from image]
     """    
 
-    uri = "https://vision.googleapis.com/v1/images:annotate?key=AIzaSyCyBYGjq-3SsKjKbYvzAJgoY18KtO4-Js0"
+    uri = "" # API for Google OCR
     header = {
         'Content-type': 'application/json'
     }
